@@ -1,0 +1,112 @@
+.user-manager-container {
+  padding: 40px 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.user-manager-card {
+  width: 100%;
+  max-width: 1100px;
+  border-radius: 14px !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06) !important;
+}
+
+.user-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-list-header h1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.user-list-container {
+  padding: 8px 4px;
+}
+
+.add-user-header {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.user-form {
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+.user-form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.input-fields,
+.ant-input,
+.ant-input-affix-wrapper {
+  height: 40px;
+  border-radius: 6px;
+}
+
+.ant-card-body {
+  padding: 24px !important;
+}
+
+@media (max-width: 768px) {
+  .user-form {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 992px) {
+  .user-manager-container {
+    padding: 20px;
+  }
+
+  .user-manager-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .user-list-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .user-list-header button {
+    width: 100%;
+  }
+
+  .user-form {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: span 1;
+  }
+
+  .user-form-actions {
+    flex-direction: column;
+  }
+
+  .user-form-actions button {
+    width: 100%;
+  }
+}
