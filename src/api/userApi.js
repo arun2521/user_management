@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:3001/users";
+const BASE_URL = "https://user-crud-api-98s8.onrender.com/users";
 
 export const getAllUsers = async () => {
   const response = await axios.get(BASE_URL);
